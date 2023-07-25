@@ -104,8 +104,4 @@ Using Postman:
 (Optional) Specify the license for your project.
 ```
 
-Remember to replace `<repository_url>` with the actual URL of your Git repository.
-
-Once you've created the `README.md` file, add it to the root directory of your project, commit the changes, and push them to your Git repository. Your documentation is now complete!
-
 If you have any more questions or need further assistance, feel free to ask. Good luck with your assignment!

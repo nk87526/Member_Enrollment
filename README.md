@@ -95,13 +95,6 @@ Using Postman:
 - The birthdate is expected in the format "yyyy-MM-dd."
 - Additional fields (if any) in the `Member` entity are of type String for simplicity.
 
-## Known Issues
 
-- (If any known issues exist, mention them here.)
-
-## License
-
-(Optional) Specify the license for your project.
-```
 
 Good Luck!!

@@ -1,0 +1,81 @@
+
+# Member Enrollment REST API
+
+This is a RESTful API for member enrollment that allows clients to create, update, retrieve, and delete member information. It is built using Spring Boot and Spring Security.
+
+## Table of Contents
+- [Prerequisites](#prerequisites)
+- [Getting Started](#getting-started)
+  - [Project Setup](#project-setup)
+  - [Database Configuration](#database-configuration)
+  - [Run the Application](#run-the-application)
+- [Endpoints](#endpoints)
+- [Testing](#testing)
+- [Authentication and Authorization](#authentication-and-authorization)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Prerequisites
+Before you begin, ensure you have met the following requirements:
+- Java Development Kit (JDK) 11 or higher installed
+- Maven build tool installed
+- Your preferred Integrated Development Environment (IDE) (e.g., IntelliJ IDEA, Eclipse)
+- Git (optional, for version control)
+
+## Getting Started
+
+### Project Setup
+1. Clone this repository to your local machine (if not already done):
+   ```
+   git clone <repository-url>
+   ```
+2. Open the project in your preferred IDE.
+
+### Database Configuration
+1. Configure the local database by modifying the `application.properties` file. Set the database URL, username, and password according to your preferences. Here is an example for an H2 database:
+   ```
+   spring.datasource.url=jdbc:h2:mem:testdb
+   spring.datasource.username=sa
+   spring.datasource.password=
+   ```
+
+### Run the Application
+1. Build the project using Maven:
+   ```
+   mvn clean install
+   ```
+2. Start the Spring Boot application:
+   ```
+   mvn spring-boot:run
+   ```
+
+The application should now be running locally.
+
+## Endpoints
+The following REST endpoints are available:
+
+- **Create Member:** POST `/members`
+- **Update Member:** PUT `/members/{id}`
+- **Retrieve Member by ID:** GET `/members/{id}`
+- **Retrieve All Members:** GET `/members`
+- **Delete Member by ID:** DELETE `/members/{id}`
+
+Detailed information on request and response formats can be found in the API documentation.
+
+## Testing
+To run the unit tests for this project, execute the following command:
+```
+mvn test
+```
+
+## Authentication and Authorization
+This project includes authentication and authorization mechanisms. You can configure user roles and permissions in the Spring Security configuration.
+
+By default, the project may have roles like "USER" and "ADMIN." Only users with the "ADMIN" role may have permission to delete members. You can customize these roles and permissions to suit your needs.
+
+## Contributing
+Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or create a pull request.
+
+```
+
+#Good Luck!. 
